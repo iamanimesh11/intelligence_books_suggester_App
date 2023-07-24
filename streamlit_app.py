@@ -2,8 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 import requests
-
 books_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/books.pkl"
+popular_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/popular.pkl"
+pt_asset_url="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/pt.pkl"
+similarity_Score_Asset_url="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/similarity_scores.pkl"
 # Load data
 def download_asset(url, filename):
     response = requests.get(url)
@@ -12,6 +14,9 @@ def download_asset(url, filename):
 
 # Download the asset and save it with the desired filename
 download_asset(books_Asset_url, 'books.pkl')
+download_asset(pt_asset_url,'pt.pkl')
+download_asset(similarity_Score_Asset_url,'similarity_scores.pkl')
+download_asset(popular_Asset_url, 'popular.pkl')
 
 popular_df = pickle.load(open('popular.pkl', 'rb'))
 pt = pickle.load(open('pt.pkl', 'rb'))
