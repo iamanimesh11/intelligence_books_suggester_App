@@ -18,7 +18,7 @@ st.markdown(
 st.markdown(
     """
     <style>
-    .github-icon {
+    div {
         display: none !important;
     }
     </style>
