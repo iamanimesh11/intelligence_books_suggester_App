@@ -50,8 +50,9 @@ def main():
     st.markdown(
     """
     <style>
+    div {
     .github-icon {
-        display: none !important;
+                display: none !important;
     }
     </style>
     """,
