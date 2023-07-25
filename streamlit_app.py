@@ -15,17 +15,20 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 st.markdown(
-    """
-    <style>
-    div {
-        display: none !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
+     """
+     <style>
+     .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+     .styles_viewerBadge_1yB5, .viewerBadge_link__1S137,
+     .viewerBadge_text__1JaDK {
+      display: none;
+     }
+     </style>
+     """,
+     unsafe_allow_html=True
 )
-    
+
 
     
 books_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/books.pkl"
