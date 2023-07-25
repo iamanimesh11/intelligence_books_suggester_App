@@ -14,7 +14,7 @@ st.markdown(
     #MainMenu {
         display: none;
     }
-    .viewerBadge_container__1QSob {
+    button.css-ch5dnh ef3psqc4 {
         display: none;
     }
     </style>
