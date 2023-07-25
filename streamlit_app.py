@@ -4,18 +4,7 @@ import numpy as np
 import pandas as pd
 import requests
 
-st.markdown(
-    """
-    <style>
-    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
-    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-    .viewerBadge_text__1JaDK {
-        display: none;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 
 books_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/books.pkl"
@@ -60,7 +49,20 @@ def is_valid_input(user_input):
     return user_input in pt.index
 
 def main():
+     
 
+    st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
     st.set_page_config(page_title='Books Store', layout='wide')
 
