@@ -5,12 +5,11 @@ import pandas as pd
 import requests
 
 st.set_page_config(page_title='Books Store', layout='wide')
-hide_main_menu_css ="""
+
 #MainMenu {
     visibility:hidden;
 }
-"""
-st.markdown(hide_main_menu_css,unsafe_allow_html=True)
+
     
 books_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/books.pkl"
 popular_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/popular.pkl"
