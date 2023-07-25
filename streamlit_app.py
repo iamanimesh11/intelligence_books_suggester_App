@@ -45,19 +45,21 @@ def is_valid_input(user_input):
     return user_input in pt.index
 
 def main():
+    st.markdown(
+        """
+        <style>
+        .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+        .styles_viewerBadge_1yB5, .viewerBadge_link__1S137,
+        .viewerBadge_text__1JaDK {
+            display: none;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.set_page_config(page_title='Books Store', layout='wide')
-    st.markdown(
-    """
-    <style>
-    div {
-    .github-icon {
-                display: none !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+    
 
     page_options = ['Home', 'ML model']
     selected_page = st.sidebar.selectbox('Navigate to:', page_options)
