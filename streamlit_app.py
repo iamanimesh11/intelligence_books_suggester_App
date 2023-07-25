@@ -5,16 +5,24 @@ import pandas as pd
 import requests
 
 st.set_page_config(page_title='Books Store', layout='wide')
+import streamlit as st
+
+# Add CSS to hide the main menu
 st.markdown(
     """
     <style>
     #MainMenu {
-        display:none;
+        display: none;
+    }
+    .viewerBadge_container__1QSob {
+        display: none;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
+
 
 
     
