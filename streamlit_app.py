@@ -47,6 +47,16 @@ def is_valid_input(user_input):
 def main():
 
     st.set_page_config(page_title='Books Store', layout='wide')
+    st.markdown(
+    """
+    <style>
+    .github-icon {
+        display: none !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
     page_options = ['Home', 'ML model']
     selected_page = st.sidebar.selectbox('Navigate to:', page_options)
