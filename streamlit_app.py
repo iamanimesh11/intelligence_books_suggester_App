@@ -3,10 +3,6 @@ import pickle
 import numpy as np
 import pandas as pd
 import requests
-
-
-
-
 books_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/books.pkl"
 popular_Asset_url ="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/popular.pkl"
 pt_asset_url="https://github.com/iamanimesh11/intelligence_books_suggester_App/releases/download/Books.pkl/pt.pkl"
@@ -49,8 +45,11 @@ def is_valid_input(user_input):
     return user_input in pt.index
 
 def main():
-     
 
+    st.set_page_config(page_title='Books Store', layout='wide')
+
+    page_options = ['Home', 'ML model']
+    selected_page = st.sidebar.selectbox('Navigate to:', page_options)
     st.markdown(
     """
     <style>
@@ -62,12 +61,7 @@ def main():
     </style>
     """,
     unsafe_allow_html=True
-)
-
-    st.set_page_config(page_title='Books Store', layout='wide')
-
-    page_options = ['Home', 'ML model']
-    selected_page = st.sidebar.selectbox('Navigate to:', page_options)
+    )
 
 
     st.sidebar.title('')
