@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import requests
 
-st.set_page_config(page_title='Books Store', layout='wide')
+st.set_page_config(page_title='Books Store', layout='wide',page_icon="📚")
 
 import streamlit as st
 
